@@ -65,7 +65,7 @@ const classesData = [
         name: 'Yoga Flow',
         category: 'yoga',
         time: '8:00 AM - 9:00 AM',
-        instructor: 'Sarah Williams',
+        instructor: 'Fatima',
         description: 'Clase de yoga fluida que combina movimientos dinámicos con posturas estáticas para mejorar flexibilidad y fuerza.',
         image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop'
     },
@@ -74,7 +74,7 @@ const classesData = [
         name: 'HIIT Training',
         category: 'hiit',
         time: '9:00 AM - 10:00 AM',
-        instructor: 'David Martinez',
+        instructor: 'Diego',
         description: 'Entrenamiento de alta intensidad para quemar calorías y mejorar tu condición cardiovascular en poco tiempo.',
         image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=400&fit=crop'
     },
@@ -83,7 +83,7 @@ const classesData = [
         name: 'Spin Class',
         category: 'cardio',
         time: '10:00 AM - 11:00 AM',
-        instructor: 'Mike Johnson',
+        instructor: 'Jorge',
         description: 'Clase de ciclismo indoor con música energética. Perfecta para mejorar resistencia y quemar calorías.',
         image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop'
     },
@@ -92,7 +92,7 @@ const classesData = [
         name: 'Strength Training',
         category: 'strength',
         time: '11:00 AM - 12:00 PM',
-        instructor: 'Mike Johnson',
+        instructor: 'Jorge',
         description: 'Entrenamiento de fuerza enfocado en construir músculo y mejorar la potencia con pesas y ejercicios funcionales.',
         image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop'
     },
@@ -101,7 +101,7 @@ const classesData = [
         name: 'Pilates Core',
         category: 'yoga',
         time: '4:00 PM - 5:00 PM',
-        instructor: 'Emma Thompson',
+        instructor: 'Fatima',
         description: 'Fortalece tu core y mejora tu postura con ejercicios de Pilates enfocados en el control y la estabilidad.',
         image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop'
     },
@@ -110,7 +110,7 @@ const classesData = [
         name: 'Zumba',
         category: 'cardio',
         time: '6:00 PM - 7:00 PM',
-        instructor: 'Sarah Williams',
+        instructor: 'Fatima',
         description: 'Diviértete mientras quemas calorías con esta clase de baile aeróbico llena de energía y ritmo latino.',
         image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop'
     }
