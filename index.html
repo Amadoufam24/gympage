@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amo's gym - Transforma tu cuerpo y mente con nuestras clases y entrenadores profesionales">
+    <title>Amo's gym - Tu camino al éxito fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">AMO'S <span class="logo-accent">GYM</span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#trainers" class="nav-link">Our Trainers</a></li>
+                    <li><a href="#classes" class="nav-link">Classes</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">AMO'S GYM</h1>
+                <p class="hero-subtitle">Transforma tu cuerpo, transforma tu vida</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">CONTACT</a>
+                    <a href="#about" class="btn btn-secondary">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="timings-banner">
+            <div class="container">
+                <span class="timings-label">Our Timings:</span>
+                <span class="timings-hours" id="timings">6:00am - 11:00am</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Tu destino para alcanzar tus metas fitness</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Bienvenido a Amo's gym</h3>
+                    <p>En Amo's gym, nos dedicamos a ayudarte a alcanzar tus objetivos de fitness con instalaciones de primera clase, entrenadores certificados y un ambiente motivador. Nuestra misión es proporcionarte las herramientas y el apoyo necesarios para transformar tu cuerpo y tu vida.</p>
+                    <p>Con más de 10 años de experiencia en el sector, hemos ayudado a miles de miembros a alcanzar sus metas. Ya sea que busques perder peso, ganar músculo, mejorar tu condición física o simplemente mantener un estilo de vida saludable, estamos aquí para apoyarte en cada paso del camino.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Miembros Activos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Clases Semanales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop" alt="Gym equipment and workout area" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Classes</h2>
+                <p class="section-subtitle">Elige la clase perfecta para ti</p>
+            </div>
+            <div class="class-filters">
+                <button class="filter-btn active" data-filter="all">All Classes</button>
+                <button class="filter-btn" data-filter="yoga">Yoga</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="strength">Strength</button>
+                <button class="filter-btn" data-filter="hiit">HIIT</button>
+            </div>
+            <div class="classes-grid" id="classesGrid">
+                <!-- Classes will be populated by JavaScript -->
+            </div>
+            <div class="schedule-section">
+                <h3>Class Schedule</h3>
+                <div class="schedule-table-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scheduleBody">
+                            <!-- Schedule will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Trainers</h2>
+                <p class="section-subtitle">Entrenadores profesionales certificados</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop" alt="Mike Johnson - Strength Trainer" class="trainer-img">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mike Johnson</h3>
+                        <p class="trainer-specialty">Strength & Conditioning</p>
+                        <p class="trainer-bio">Certificado en entrenamiento de fuerza con más de 8 años de experiencia. Especializado en powerlifting y bodybuilding.</p>
+                        <div class="trainer-certifications">
+                            <span class="cert-badge">NASM</span>
+                            <span class="cert-badge">ACSM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop" alt="Sarah Williams - Yoga Instructor" class="trainer-img">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Williams</h3>
+                        <p class="trainer-specialty">Yoga & Flexibility</p>
+                        <p class="trainer-bio">Instructora de yoga certificada con formación en Vinyasa, Hatha y Yin Yoga. Apasionada por el bienestar mental y físico.</p>
+                        <div class="trainer-certifications">
+                            <span class="cert-badge">RYT 200</span>
+                            <span class="cert-badge">Yoga Alliance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop" alt="David Martinez - HIIT Trainer" class="trainer-img">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>David Martinez</h3>
+                        <p class="trainer-specialty">HIIT & Cardio</p>
+                        <p class="trainer-bio">Especialista en entrenamiento de alta intensidad y pérdida de peso. Creador de programas de fitness funcional.</p>
+                        <div class="trainer-certifications">
+                            <span class="cert-badge">ACE</span>
+                            <span class="cert-badge">HIIT Certified</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=400&fit=crop" alt="Emma Thompson - Pilates Instructor" class="trainer-img">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Emma Thompson</h3>
+                        <p class="trainer-specialty">Pilates & Core</p>
+                        <p class="trainer-bio">Instructora de Pilates certificada con enfoque en rehabilitación y fortalecimiento del core. Más de 6 años de experiencia.</p>
+                        <div class="trainer-certifications">
+                            <span class="cert-badge">Pilates Certified</span>
+                            <span class="cert-badge">NASM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Membership Plans</h2>
+                <p class="section-subtitle">Elige el plan perfecto para tus necesidades</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Acceso a todas las instalaciones</li>
+                        <li>✓ Horario estándar (6am-11am)</li>
+                        <li>✓ Clases grupales (limitadas)</li>
+                        <li>✓ Aplicación móvil</li>
+                        <li>✗ Entrenador personal</li>
+                        <li>✗ Acceso 24/7</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Sign Up</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Acceso a todas las instalaciones</li>
+                        <li>✓ Horario extendido (6am-11am)</li>
+                        <li>✓ Clases grupales ilimitadas</li>
+                        <li>✓ Aplicación móvil</li>
+                        <li>✓ 2 sesiones de entrenador personal/mes</li>
+                        <li>✗ Acceso 24/7</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Annual</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">599</span>
+                            <span class="period">/year</span>
+                        </div>
+                        <div class="savings">Save $149</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Acceso a todas las instalaciones</li>
+                        <li>✓ Acceso 24/7</li>
+                        <li>✓ Clases grupales ilimitadas</li>
+                        <li>✓ Aplicación móvil</li>
+                        <li>✓ 4 sesiones de entrenador personal/mes</li>
+                        <li>✓ Suplementos nutricionales (descuento 20%)</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <p class="section-subtitle">Consejos, noticias y actualizaciones</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=400&fit=crop" alt="Workout and exercise tips" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Enero, 2024</span>
+                        <h3>10 Consejos para Iniciar tu Rutina de Ejercicio</h3>
+                        <p>Descubre los mejores consejos para comenzar tu viaje fitness de manera segura y efectiva. Desde la planificación hasta la motivación...</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop" alt="Sports nutrition and healthy food" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">12 Enero, 2024</span>
+                        <h3>Nutrición para el Rendimiento Deportivo</h3>
+                        <p>La alimentación es clave para maximizar tus resultados en el gimnasio. Aprende qué comer antes y después del entrenamiento...</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop" alt="Yoga and meditation benefits" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">10 Enero, 2024</span>
+                        <h3>Beneficios del Yoga para la Salud Mental</h3>
+                        <p>El yoga no solo mejora tu flexibilidad, también tiene increíbles beneficios para tu bienestar mental. Descubre cómo puede ayudarte...</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Tomas morales</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+34 624703270</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>amadoufam24@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Sunday: 6:00am - 11:00am</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="classes">Class Information</option>
+                            <option value="trainer">Trainer Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AMO'S GYM</h3>
+                    <p>Transforma tu cuerpo, transforma tu vida. Únete a nuestra comunidad fitness hoy.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amo's gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
